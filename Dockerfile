@@ -1,5 +1,7 @@
 FROM scratch
-MAINTAINER binhex
+MAINTAINER professorkaos64
+
+# Credit: https://github.com/binhex/arch-scratch
 
 # additional files
 ##################
@@ -16,7 +18,7 @@ ADD bootstrap/ducktape/ducktape /.ducktape
 RUN ["/.shim", ""]
 
 # run ducktape to download and extract root tarball
-RUN ["/.ducktape", "https://github.com/binhex/arch-scratch/releases/download/0.0.1/root.tar.bz2"]
+RUN ["/.ducktape", "https://github.com/binhex/arch-scratch/releases/download/20161031-i686/root.tar.bz2"]
 
 # remove bootstrap files
 RUN /usr/bin/rm -f /.shim /.cert /.ducktape /.dockerenv /.dockerinit
