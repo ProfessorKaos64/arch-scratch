@@ -25,3 +25,4 @@ RUN /usr/bin/rm -f /.shim /.cert /.ducktape /.dockerenv /.dockerinit
 
 # set entry point as /bin/bash
 CMD ["/bin/bash"]
+ENTRYPOINT ["linux32", "--"]
