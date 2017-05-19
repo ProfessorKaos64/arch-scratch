@@ -1,4 +1,5 @@
-Docker build Updated: 20170518
+**Used for Docker Hub build triggering**
+Docker build version: 20170518-2
 
 **Application**
 
